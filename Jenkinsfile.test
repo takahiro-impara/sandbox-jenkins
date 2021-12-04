@@ -6,6 +6,9 @@ pipeline {
     stage("test"){
       steps {
         sh "echo test"
+        sh '''set +xe
+              echo line1
+              ech  line2'''
       }
     }
     stage("developer test"){
