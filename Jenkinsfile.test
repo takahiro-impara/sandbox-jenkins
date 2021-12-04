@@ -9,10 +9,11 @@ pipeline {
     stage("developer test"){
       when {
         branch "develop"
-        steps {
-          sh "echo This is dev test"
-        }
-      } 
+        
+      }
+      steps {
+        echo "echo this is develop test"
+      }
     }
   }
 }
